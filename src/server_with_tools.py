@@ -10,6 +10,7 @@ from azure.identity import AzureCliCredential
 from fastapi import FastAPI
 from pydantic import Field
 from dotenv import load_dotenv
+from tools import WeatherTools
 
 load_dotenv()
 
@@ -54,15 +55,18 @@ if not deployment_name:
 chat_client = AzureOpenAIChatClient(
     credential=AzureCliCredential(),
     endpoint=endpoint,
-    deployment_name=deployment_name,    
+    deployment_name=deployment_name,
 )
+
+# Create tools instance
+weather_tools = WeatherTools(api_key=os.environ.get("WEATHER_API_KEY", "demo-key"))
 
 # Create agent with tools
 agent = ChatAgent(
     name="TravelAssistant",
     instructions="You are a helpful travel assistant. Use the available tools to help users plan their trips.",
     chat_client=chat_client,
-    tools=[get_weather, search_restaurants],
+    tools=[weather_tools.get_current_weather, weather_tools.get_forecast, search_restaurants],
 )
 
 # Create FastAPI app
