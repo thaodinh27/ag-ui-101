@@ -1,0 +1,32 @@
+data: {"type":"RUN_STARTED","threadId":"bb61af57-6037-419d-a832-56a3fb71105e","runId":"a3814be5-55b4-4213-9ec2-50e846cb5c98"}
+
+data: {"type":"TOOL_CALL_START","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD","toolCallName":"read_climate_sensors"}
+
+data: {"type":"TOOL_CALL_ARGS","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD","delta":"{\""}
+
+data: {"type":"TOOL_CALL_ARGS","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD","delta":"include"}
+
+data: {"type":"TOOL_CALL_ARGS","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD","delta":"_temperature"}
+
+data: {"type":"TOOL_CALL_ARGS","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD","delta":"\":"}
+
+data: {"type":"TOOL_CALL_ARGS","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD","delta":"true"}
+
+data: {"type":"TOOL_CALL_ARGS","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD","delta":",\""}
+
+data: {"type":"TOOL_CALL_ARGS","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD","delta":"include"}
+
+data: {"type":"TOOL_CALL_ARGS","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD","delta":"_h"}
+
+data: {"type":"TOOL_CALL_ARGS","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD","delta":"umidity"}
+
+data: {"type":"TOOL_CALL_ARGS","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD","delta":"\":"}
+
+data: {"type":"TOOL_CALL_ARGS","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD","delta":"false"}
+
+data: {"type":"TOOL_CALL_ARGS","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD","delta":"}"}
+
+data: {"type":"TOOL_CALL_END","toolCallId":"call_WKo5cMhTIu3rIRKhT0UKlBxD"}
+
+data: {"type":"RUN_FINISHED","threadId":"bb61af57-6037-419d-a832-56a3fb71105e","runId":"a3814be5-55b4-4213-9ec2-50e846cb5c98"}
+

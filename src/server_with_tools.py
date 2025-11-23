@@ -11,6 +11,10 @@ from fastapi import FastAPI
 from pydantic import Field
 from dotenv import load_dotenv
 from tools import WeatherTools
+import debugpy
+
+# debugpy.listen(("0.0.0.0", 5678))
+
 
 load_dotenv()
 
